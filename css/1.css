@@ -1,0 +1,167 @@
+.cards {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-bottom: 45px;
+}
+
+.cards__card,
+.cards__card:visited {
+	flex: 0 0 375px;
+	box-sizing: border-box;
+	background: #fff;
+	border: 1px solid #91a2ad;
+	border-radius: 6px;
+	overflow: hidden;
+	display: flex;
+	min-height: 189px;
+	margin-bottom: 6px;
+}
+
+.cards__card--interactive:hover,
+.cards__card--interactive:active {
+	cursor: pointer;
+	box-shadow: 10px 10px 27px -7px rgba(0, 0, 0, 0.3);
+	transition: all 400ms;
+}
+
+.cards__text {
+	font-size: 14px;
+	padding: 42px 0 0 29px;
+}
+
+.cards__text--main {
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.cards__badge {
+	flex: 0 0 116px;
+	position: relative;
+	background: #ccc;
+}
+
+.cards__badge::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 53px;
+	left: 100%;
+
+	width: 0; 
+  	height: 0;
+	border-top: 6px solid transparent;
+  	border-bottom: 6px solid transparent;
+	border-left: 6px solid #ccc;
+
+}
+
+.cards__card--car .cards__badge {
+	background: #097796;
+}
+.cards__card--car .cards__badge::after {
+	border-left-color: #097796;
+}
+.cards__card--car .cards__text--main {
+	color: #097796;
+}
+
+.cards__card--calc .cards__badge {
+	background: #25a8c2;
+}
+.cards__card--calc .cards__badge::after {
+	border-left-color: #25a8c2;
+}
+.cards__card--calc .cards__text--main {
+	color: #25a8c2;
+}
+
+.cards__card--check .cards__badge {
+	background: #56c1da;
+}
+.cards__card--check .cards__badge::after {
+	border-left-color: #56c1da;
+}
+.cards__card--check .cards__text--main {
+	color: #56c1da;
+}
+
+.cards__card--income .cards__badge {
+	background: #e77811;
+}
+.cards__card--income .cards__badge::after {
+	border-left-color: #e77811;
+}
+.cards__card--income .cards__text--main {
+	color: #e77811;
+}
+
+.cards__card--profit .cards__badge {
+	background: #f2ac00;
+}
+.cards__card--profit .cards__badge::after {
+	border-left-color: #f2ac00;
+}
+.cards__card--profit .cards__text--main {
+	color: #f2ac00;
+}
+
+.cards__card--agents .cards__badge {
+	background: #91a2ad;
+}
+.cards__card--agents .cards__badge::after {
+	border-left-color: #91a2ad;
+}
+.cards__card--agents .cards__text--main {
+	color: #91a2ad;
+}
+
+.comparison__values {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.comparison__item,
+.comparison__item:visited {
+	flex: 0 0 567px;
+	box-sizing: border-box;
+	background: #fff;
+	border: 1px solid #91a2ad;
+	border-radius: 6px;
+	min-height: 78px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 6px;
+}
+
+.comparison__metric {
+	flex: 1 1;
+	padding: 29px;
+}
+
+.comparison__value {
+	display: flex;
+	border-left: 1px solid #91a2ad;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 168px;
+	font-size: 21px;
+	font-weight: 500;
+}
+
+.comparison__value--asc {
+	color: #3dad31;
+}
+
+.comparison__value--desc {
+	color: #da241a;
+}
+
+.comparison__item--interactive:hover,
+.comparison__item--interactive:active {
+	cursor: pointer;
+	box-shadow: 10px 10px 27px -7px rgba(0, 0, 0, 0.3);
+	transition: all 400ms;
+}
