@@ -95,7 +95,7 @@ a {
 	text-align: center;
 }
 
-.menu__item-active,
+.menu__item--active,
  .menu__item:active,
  .menu__item:hover {
 	background: #1ed0e8;
@@ -103,7 +103,7 @@ a {
 	transition: all 400ms;
 }
 
-.menu__item-active::after {
+.menu__item--active::after {
 	content: "";
 	display: block;
 	position: absolute;
