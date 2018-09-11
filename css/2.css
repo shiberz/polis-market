@@ -152,7 +152,7 @@
 }
 
 .field__inner {
-	padding: 0 30px;
+	margin: 0 30px;
 	border-bottom: 1px solid #91a2ad;
 }
 
@@ -209,6 +209,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: 0 30px;
 }
 
 .steps__step {
