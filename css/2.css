@@ -282,3 +282,15 @@
 	color: #fff;
 	transition: all 400ms;
 }
+
+.selected-options {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
+
+.selected-options__option {
+	font-size: 16px;
+	font-weight: 500;
+}
+
