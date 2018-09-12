@@ -207,14 +207,16 @@
 	border-bottom: 1px solid transparent;
 }
 
-.makers__item--interactive {
+.makers__label {
 	cursor: pointer;
+	border-bottom: 1px solid transparent;
 }
 
-.makers__item--interactive:hover,
-.makers__item--interactive:active {
+.makers__label:hover,
+.makers__label:active {
 	color: #2cadc7;
 	border-bottom: 1px solid #2cadc7;
+	transition: all 400ms;
 }
 
 .steps {
@@ -276,6 +278,12 @@
 	cursor: pointer;
 }
 
+.options__option--active {
+	background-color: #2cadc7;
+	color: #fff;
+	font-weight: 500;
+}
+
 .options__option--interactive:hover,
 .options__option--interactive:active {
 	background-color: #2cadc7;
@@ -284,13 +292,56 @@
 }
 
 .selected-options {
+	margin-top: 15px;
+	padding: 0;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
+	align-items: center;
+	list-style: none;
 }
 
 .selected-options__option {
 	font-size: 16px;
 	font-weight: 500;
+	letter-spacing: 0.5px;
+	margin-right: 20px;
 }
 
+.selected-options__option:last-child {
+	margin-right: 0;	
+}
+
+.selected-options__option--removable {
+	cursor: pointer;
+}
+
+.selected-options__option--removable:hover::after,
+.selected-options__option--removable:active::after {
+	background-color: #91a2ad;
+	color: #fff;
+	transition: all 400ms;
+}
+
+.selected-options__option-label {
+	border-bottom: 1px solid transparent;
+}
+
+.selected-options__option--removable:hover .selected-options__option-label,
+.selected-options__option--removable:active .selected-options__option-label {
+	border-bottom: 1px solid #91a2ad;
+	transition: all 400ms;
+}
+
+.selected-options__option--removable::after {
+	content:"\2715";
+	line-height: 17px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #91a2ad;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: 400;
+	font-size: 10px;
+}
