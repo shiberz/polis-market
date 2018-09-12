@@ -44,11 +44,12 @@
 .crumbs__line {
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: flex-start;
 }
 
 .crumbs__crumb {
 	background: #5accbe;
-	flex-basis: "content";
+	flex: 1 0 auto;
 	min-width: 20%;
 	height: 42px;
 	position: relative;
@@ -56,6 +57,7 @@
 	color: #fff;
 	display: flex;
 	align-items: center;
+	box-shadow: 0 -15px 40px -20px rgba(0,0,0,0.5) inset;
 }
 
 .crumbs__crumb::before {
@@ -67,8 +69,8 @@
 
 	width: 0; 
   	height: 0; 	
-	border-top: 21px solid #5accbe;
-  	border-bottom: 21px solid #5accbe;
+	border-top: 21px solid transparent;
+  	border-bottom: 21px solid transparent;
 	border-left: 8px solid #fff;
 }
 
@@ -83,7 +85,7 @@
   	height: 0; 	
 	border-top: 21px solid #fff;
   	border-bottom: 21px solid #fff;
-	border-left: 8px solid #5accbe;
+	border-left: 8px solid transparent;
 }
 
 .crumbs__crumb:first-child::before {
@@ -110,9 +112,21 @@
 .crumb__progress {
 	position: absolute;
 	height: 100%;
-	background: #000;
+	background: #519c93;
 }
 
+.crumb__progress--complete {
+	width: 100%;
+}
+
+ .crumbs__crumb--complete {
+ 	background: #519c93;
+ }
+
+ .crumbs__crumb--complete .crumbs__crumb-num,
+ .crumbs__crumb--in-progress .crumbs__crumb-num {
+ 	color: #519c93;
+ }
 
 .switch {
 	border-radius: 6px;
