@@ -111,6 +111,8 @@
 
 .crumb__progress {
 	position: absolute;
+	left: 0;
+	top: 0;
 	height: 100%;
 	background: #519c93;
 }
@@ -191,14 +193,14 @@
 }
 
 .makers-list {
-	display: grid;
-  	grid-template-columns: repeat(5, 20%);
-  	grid-auto-flow: row;
+	display: flex;
+  	flex-flow: row wrap;
   	padding-bottom: 0;
 }
 
 .makers {
 	list-style: none;
+	flex: 0 0 20%;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 50px;
