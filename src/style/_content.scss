@@ -3,7 +3,8 @@
 @import './_continue.scss';
 
 .content {
-	padding: 10px 0;
+	flex: 1 1;
+	padding: 0 $grid-spacing * 1.5 $grid-spacing;
 
 	&__header {
 		font-size: 24pt;

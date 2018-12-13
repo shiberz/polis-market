@@ -4,10 +4,22 @@
 	&__header {
 		margin-top: -$grid-spacing;
 		padding: 0 $grid-spacing;
+		font-size: 24pt;
+		font-weight: normal;
 
 		height: 130px;
 		display: flex;
 		align-items: center;
+
+		.title {
+			color: $primary-color;
+			font-weight: bold;
+			margin: 0 6px;
+		}
+
+		&-icon {
+			margin-right: 25px;
+		}
 	}
 
 	&__content {
