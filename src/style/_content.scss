@@ -1,0 +1,33 @@
+@import './_progress-bar.scss';
+@import './_block.scss';
+@import './_continue.scss';
+
+.content {
+	padding: 10px 0;
+
+	&__header {
+		font-size: 24pt;
+		line-height: 1em;
+		color: $primary-color;
+		height: 130px;
+		display: flex;
+		align-items: center;
+		margin: 0;
+	}
+
+	&__block {
+		display: block;
+		margin-bottom: $content-spacing;
+		background: #fff;
+
+		&:last-child {
+			margin: 0;
+		}
+
+		&--no-margin {
+			margin: 0;
+		}
+	}
+
+}
+

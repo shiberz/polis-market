@@ -1,0 +1,151 @@
+.sidebar {
+	background-color: #fff;
+	flex: 0 0 290px;
+	transition: all .5s;
+	overflow-x: hidden;
+	min-height: 100vh;
+	font-size: 16pt;
+	line-height: 16pt;
+}
+
+.logo {
+	display: block;
+	margin: 0;
+	background: 40px 50% url('/static/logo/full.png') no-repeat;
+	width: 100%;
+	height: 130px;
+	cursor: pointer;
+	border: 0;
+	outline: none;
+
+}
+
+.menu {
+	&__item {
+		display: flex;
+		height: 50px;
+		white-space: nowrap;
+		text-decoration: none;
+		color: $font-color;
+		align-items: center;
+		justify-content: flex-start;
+
+		&:hover,
+		&--active {
+			background-color: $menu-hover;
+			color: $primary-color;
+			transition: all .4s;
+		}
+	}
+
+	&__icon {
+		margin: 0 15px 0 40px;
+	}
+
+}
+
+.login {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 105px;
+
+	&__block {
+		display: block;
+		padding: 15px 0;
+
+		&:first-child {
+			padding-left: 40px;
+		}
+		&:last-child {
+			padding-right: 40px;
+		}
+	}
+
+	&:hover,
+	&--active {
+		background-color: $menu-hover;
+		transition: all .4s;
+	}
+
+	&__icon {
+		min-width: 50px;
+		min-height: 50px;
+		flex: 0 0;
+		display: flex;
+		border-radius: 50%;
+		background-color: $primary-color;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__name,
+	&__link {
+		padding-left: 20px;
+		color: $primary-color;
+		display: block;
+		text-decoration: none;
+
+		&:hover,
+		&:active,
+		&:focus {
+			text-decoration: none;
+		}
+	}
+
+	&__name {
+		white-space: nowrap;
+		max-width: 180px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	&__link {
+		color: $font-color;
+		padding-top:4px;
+		font-size: 14pt;
+
+		&:hover * {
+			color: $font-color;
+			border-bottom: 1px solid $font-color;
+		}
+	}
+
+}
+
+.sidebar--closed {
+	flex: 0 0 80px;
+	transition: all .5s;
+
+	.logo {
+		background: 50% 50% url('/static/logo/short.png') no-repeat;
+	}
+
+	.menu {
+		&__icon {
+			margin: 0 auto;
+		}
+		&__text {
+			display: none;
+		}
+	}
+
+	.login {
+		margin-top: 115px;
+		justify-content: center;
+
+		&__block {
+			padding: 15px 0;
+		}
+
+		&__icon {
+			min-width: 30px;
+			min-height: 30px;
+			background-color: $primary-color-light;
+		}
+
+		&__name,
+		&__link {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,57 @@
+@import './_normalize.scss';
+@import './_font.scss';
+@import './_constants.scss';
+@import './_sidebar.scss';
+@import './_icon.scss';
+@import './_grid.scss';
+@import './_content.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+html{
+  height: 100%;
+}
+
+html, body {
+	min-height: 100%;
+	min-height: 100vh;
+	min-width: 100%;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Circe', sans-serif;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: normal;
+
+	line-height: 20px;
+  	font-size: 14pt;
+  	line-height: 14pt;
+  	color: $font-color;
+  	font-weight: 400;
+  	background-color: $background;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  min-width: 960px;
+  display: flex;
+  flex-align: flex-start;
+}
+
+.content {
+	flex: 1 1;
+	padding: 0 $grid-spacing * 1.5;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+
+

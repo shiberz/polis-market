@@ -1,0 +1,16 @@
+.block {
+	padding: $grid-spacing 0;
+
+	&__header {
+		margin-top: -$grid-spacing;
+		padding: 0 $grid-spacing;
+
+		height: 130px;
+		display: flex;
+		align-items: center;
+	}
+
+	&__content {
+		padding: 0 $grid-spacing $grid-spacing $grid-spacing;
+	}
+}

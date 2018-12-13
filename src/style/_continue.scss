@@ -1,0 +1,18 @@
+.continue {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: $content-spacing;
+	height: 70px;
+	text-decoration: none;
+	background: $primary-color;
+	color: #fff;
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+		background: $primary-color-light;
+		color: #fff;
+	}
+}

@@ -1,0 +1,47 @@
+.icon {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+
+	&--big {
+		width: 25px;
+		height: 25px;
+	}
+
+	&--small {
+		width: 18px;
+		height: 18px;
+	}
+
+	&__house {
+		background-image: url(/static/icon/house.png);
+	}
+	&__checkbox {
+		background-image: url(/static/icon/checkbox.png);
+	}
+	&__copy {
+		background-image: url(/static/icon/copy.png);
+	}
+	&__document {
+		background-image: url(/static/icon/document.png);
+	}
+	&__download {
+		background-image: url(/static/icon/download.png);
+	}
+	&__file-cabinet {
+		background-image: url(/static/icon/file-cabinet.png);
+	}
+	&__id-card {
+		background-image: url(/static/icon/id-card.png);
+	}
+	&__reload {
+		background-image: url(/static/icon/reload.png);
+	}
+	&__user {
+		background-image: url(/static/icon/user.png);
+	}
+}
+
