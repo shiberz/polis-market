@@ -1,8 +1,19 @@
+@mixin icon-mixin($icon) {
+ 	background-image: url(/static/icon/#{$icon}.png);
+
+	&:hover,
+	&:focus,
+	&:active,
+	&--active {
+		background-image: url(/static/icon/#{$icon}--active.png);
+	}
+}
+
 .icon {
 	display: inline-block;
 	width: 22px;
 	height: 22px;
-	background-size: cover;
+	background-size: contain;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 
@@ -16,32 +27,60 @@
 		height: 18px;
 	}
 
+	&--x-small {
+		width: 11px;
+		height: 11px;
+	}
+
 	&__house {
-		background-image: url(/static/icon/house.png);
+		@include icon-mixin('house');
 	}
 	&__checkbox {
-		background-image: url(/static/icon/checkbox.png);
+		@include icon-mixin('checkbox');
 	}
 	&__copy {
-		background-image: url(/static/icon/copy.png);
+		@include icon-mixin('copy');
 	}
 	&__document {
-		background-image: url(/static/icon/document.png);
+		@include icon-mixin('document');
 	}
 	&__download {
-		background-image: url(/static/icon/download.png);
+		@include icon-mixin('download');
 	}
 	&__file-cabinet {
-		background-image: url(/static/icon/file-cabinet.png);
+		@include icon-mixin('file-cabinet');
 	}
 	&__id-card {
-		background-image: url(/static/icon/id-card.png);
+		@include icon-mixin('id-card');
 	}
 	&__reload {
-		background-image: url(/static/icon/reload.png);
+		@include icon-mixin('reload');
 	}
 	&__user {
-		background-image: url(/static/icon/user.png);
+		@include icon-mixin('user');
+	}
+	&__clip {
+		@include icon-mixin('clip');
+	}
+	&__close {
+		@include icon-mixin('close');
+	}
+	&__down-arr {
+		@include icon-mixin('down-arr');
+
+		&--gray {
+			@include icon-mixin('down-arr--gray');
+		}
+	}
+
+	&__up-arr {
+		transform-origin: 50% 50%;
+		transform: rotate(180deg);
+		@include icon-mixin('up-arr');
+
+		&--gray {
+			@include icon-mixin('up-arr--gray');
+		}
 	}
 }
 
