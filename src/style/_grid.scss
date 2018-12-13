@@ -5,6 +5,12 @@
   padding-right: $grid-spacing / 2;
   flex: 1 1;
 }
+
+.grid--no-space {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 @media (min-width: 768px) {
   .grid {
     min-width: 490px;
