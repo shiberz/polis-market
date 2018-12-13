@@ -6,6 +6,7 @@
 		padding: 0 $grid-spacing;
 		font-size: 24pt;
 		font-weight: normal;
+		cursor: pointer;
 
 		height: 130px;
 		display: flex;
@@ -24,5 +25,17 @@
 
 	&__content {
 		padding: 0 $grid-spacing $grid-spacing $grid-spacing;
+	}
+
+	>* {
+		overflow: hidden;
+		max-height: auto;
+	}
+
+	&--closed {
+		>*:not(.block__header) {
+			max-height: 0;
+			padding: 0;
+		}
 	}
 }

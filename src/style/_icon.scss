@@ -67,20 +67,9 @@
 	}
 	&__down-arr {
 		@include icon-mixin('down-arr');
-
-		&--gray {
-			@include icon-mixin('down-arr--gray');
-		}
 	}
-
 	&__up-arr {
-		transform-origin: 50% 50%;
-		transform: rotate(180deg);
 		@include icon-mixin('up-arr');
-
-		&--gray {
-			@include icon-mixin('up-arr--gray');
-		}
 	}
 }
 
