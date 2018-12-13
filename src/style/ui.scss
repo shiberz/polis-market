@@ -1,0 +1,66 @@
+@import './_input.scss';
+@import './_select.scss';
+@import './_file.scss';
+@import './_switch.scss';
+@import './_button.scss';
+
+.form-control {
+	position: relative;
+	height: 70px;
+	min-height: 70px;
+	border: 2px solid transparent;
+	border-radius: 8px;
+	background: $secondary-color;
+	transition: all $transition-time;
+	display: flex;
+	align-items: flex-end;
+
+	&:hover,
+	&:active,
+	&:focus {
+		border: 2px solid $accent-color;
+		transition: all $transition-time;
+	}
+
+	&__label {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 100%;
+		padding: 0 20px;
+		display: flex;
+		align-items: center;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		font-size: 16pt;
+		color: $font-color-header;
+		transition: all $transition-time;
+	}
+
+	&__input {
+		height: 50%;
+		padding: 0 20px;
+		flex: 1 0;
+		border: 0;
+		background: transparent;
+		font-size: 16pt;
+		color: $font-color;
+
+		&:focus,
+		&:active,
+		&:not([value=""]) {
+			&+.form-control__label,
+			&+.form-control__label {
+				font-size: 14pt;
+				height: 50%;
+				bottom: 50%;
+				transition: all $transition-time;
+			}
+		}
+	}
+}
+
+.form-control__input+.form-control__label {
+	
+}
