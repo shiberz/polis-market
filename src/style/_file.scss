@@ -1,0 +1,43 @@
+@import './_loader.scss';
+
+.file-input {
+	position: relative;
+	height: $control-height;
+	min-height: $control-height;
+	border: 2px solid $secondary-color;
+	border-radius: $border-radius;
+	background: $secondary-color;
+	transition: all $transition-time;
+	overflow-x: hidden;
+	cursor: pointer;
+
+	&__input {
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+	}
+
+	&__label {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+
+	&__icon {
+		margin-right: $grid-spacing / 2;
+	}
+
+	&:hover,
+	&:active,
+	&:focus {
+		border: 2px dashed $secondary-color;
+		background: transparent;
+	}
+}
