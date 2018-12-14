@@ -1,0 +1,75 @@
+.text-input {
+	position: relative;
+	height: $control-height;
+	min-height: $control-height;
+	border: 2px solid $secondary-color;
+	border-radius: $border-radius;
+	transition: all $transition-time;
+	display: flex;
+	align-items: flex-end;
+	overflow-x: hidden;
+
+	&__label {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		padding: 0 20px;
+		display: flex;
+		align-items: center;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		font-size: 16pt;
+		color: $font-color-header;
+		background: $secondary-color;
+		transition: all $transition-time;
+	}
+
+	&__input {
+		height: 50%;
+		width: 100%;
+		padding: 0 20px;
+		flex: 1 0;
+		border: 0;
+		background: $secondary-color;
+		font-size: 16pt;
+		color: $font-color;
+
+		&:focus,
+		&:active {
+			background: transparent;
+
+			&+.text-input__label,
+			&+.text-input__label {
+				background: transparent;
+				font-size: 14pt;
+				height: 50%;
+				bottom: 50%;
+				transition: all $transition-time;
+			}
+		}
+	}
+
+	&--has-value {
+		background: transparent;
+
+		.text-input {
+			&__input,
+			&__label {
+				background: transparent;
+			}
+
+			&__label {
+				font-size: 14pt;
+				height: 50%;
+				bottom: 50%;
+			}
+		}
+	}
+
+	&--has-error {
+		border: 2px solid $accent-color;
+	}
+}

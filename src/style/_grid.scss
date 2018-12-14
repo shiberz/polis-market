@@ -11,22 +11,16 @@
   padding-right: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .grid {
     min-width: 490px;
     max-width: 650px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .grid {
     min-width: 720px;
     max-width: 880px;
-  }
-}
-@media (min-width: 1200px) {
-  .grid {
-    min-width: 930px;
-    max-width: 1090px;
   }
 }
 .grid-fluid {
