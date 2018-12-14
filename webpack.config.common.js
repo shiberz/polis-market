@@ -21,6 +21,7 @@ module.exports = {
     './src/style/normalize.scss',
     './src/style/main.scss',
     './src/style/auth.scss',
+    './src/style/contracts.scss',
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),

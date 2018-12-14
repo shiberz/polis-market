@@ -6,37 +6,38 @@
 	<div class="container">
 		<!--# include virtual="./src/includes/sidebar.html" -->
 		<div class="content">
-
 			<h1 class="content__header">Агенты</h1>
-
-			<div class="content__block block js-block">
-				<div class="block__header js-block-toggle">
-					<span class="icon icon--x-small icon__up-arr block__header-icon js-block-icon"></span>
-					Шаг 1 из 6 <strong class="title">Рассчет</strong>
-				</div>
-
-				<div class="block__content">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</div>
-				<div class="grid">
-					<div class="row row--space">
-						<div class="col-xs-6">
-							row with full space
-						</div>
-						<div class="col-xs-6">
-							row with full space
-						</div>
+			<div class="content__block contracts">
+				<div class="grid contracts__filters">
+					<div class="col-xs-12">
+						<!--# include virtual="./src/includes/input.html" -->
 					</div>
-					<div class="row">
-						<div class="col-xs-6 col-md-4">
-							row with half space
-						</div>
-						<div class="col-xs-6 col-md-4">
-							row with half space
-						</div>
-						<div class="col-xs-6 col-md-4">
-							row with half space
-						</div>
+				</div>
+				<div class="table">
+					<div class="tr">
+						<div class="th td--expandable">Агент</div>
+						<div class="th td--expandable">email</div>
+						<div class="th td--content-width">телефон</div>
+						<div class="th td--content-width">Город</div>
+						
+					</div>
+					<a href="#" class="tr">
+						<div class="td td--expandable">Константин Константинович Уткин-Задунайский</div>
+						<div class="td td--expandable">duck1231623978126&shy;@some.other.mail.service.com</div>
+						<div class="td td--content-width">+7 123 456-78-90</div>
+						<div class="td td--content-width">Москва</div>
+					</a>
+					<div class="tr tr--interactive">
+						<div class="td td--expandable">Константин Константинович Уткин-Задунайский</div>
+						<div class="td  td--expandable">duck1231623978126&shy;@some.other.mail.service.com</div>
+						<div class="td td--content-width">+7 123 456-78-90</div>
+						<div class="td td--content-width">Москва</div>
+					</div>
+					<div class="tr">
+						<a href="#name" class="td td--expandable td--interactive">Василий Петрович Пупкин</a>
+						<a href="#email" class="td">vasya@mail.ru</a>
+						<a href="#phone" class="td td--content-width">+7 910 123-45-67</a>
+						<a href="#city" class="td td--content-width">Петропавловск-Камчатский</a>
 					</div>
 				</div>
 			</div>
