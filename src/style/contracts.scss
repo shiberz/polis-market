@@ -1,0 +1,26 @@
+@import './_font.scss';
+@import './_constants.scss';
+@import './_sidebar.scss';
+@import './_icon.scss';
+@import './_grid.scss';
+@import './_content.scss';
+
+.contracts {
+	padding: $grid-spacing 0;
+
+	&__filters {
+		margin-bottom: $grid-spacing;
+	}
+}
+
+.contract {
+	padding: $grid-spacing * 1.5 0;
+
+	&__term,
+	&__def {
+		font-size: 12pt;
+		font-weight: normal;
+		padding: $grid-spacing/2 $grid-spacing;
+		border-color: transparent;
+	}
+}

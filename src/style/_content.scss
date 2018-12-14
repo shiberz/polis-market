@@ -9,9 +9,10 @@
 	padding: 0 $grid-spacing * 1.5 $grid-spacing;
 
 	&__header {
-		font-size: 24pt;
+		font-size: 20pt;
+		font-weight: 300;
 		line-height: 1em;
-		color: $primary-color;
+		color: $font-color-header;
 		height: 130px;
 		display: flex;
 		align-items: center;

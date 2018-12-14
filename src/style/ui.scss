@@ -49,6 +49,8 @@
 
 		&:focus,
 		&:active,
+		&--has-value,
+		&[value],
 		&:not([value=""]) {
 			&+.form-control__label,
 			&+.form-control__label {
