@@ -6,10 +6,10 @@
 
 .form-control {
 	position: relative;
-	height: 70px;
-	min-height: 70px;
+	height: $control-height;
+	min-height: $control-height;
 	border: 2px solid transparent;
-	border-radius: 8px;
+	border-radius: $border-radius;
 	background: $secondary-color;
 	transition: all $transition-time;
 	display: flex;

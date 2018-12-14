@@ -18,7 +18,9 @@ module.exports = {
   },
   entry: [
     './src/js/app.js',  
-    './src/style/main.scss'
+    './src/style/normalize.scss',
+    './src/style/main.scss',
+    './src/style/auth.scss',
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),

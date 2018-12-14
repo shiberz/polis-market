@@ -1,0 +1,42 @@
+@import './_font.scss';
+@import './_constants.scss';
+@import './_sidebar.scss';
+@import './_icon.scss';
+@import './_grid.scss';
+@import './_content.scss';
+@import './ui.scss';
+
+.auth {
+	display: block;
+	background: #fff;
+	padding: $grid-spacing / 2 $grid-spacing;
+
+	&__header {
+		justify-content: center;
+		font-weight: 300;
+		font-size: 20pt;
+		color: $font-color;
+	}
+}
+
+.auth-restore {
+	text-align: center;
+	margin-top: 50px;
+
+	&__link {
+		color: $primary-color;
+		text-decoration: none;
+		border-bottom: 1px solid transparent;
+		transition: $transition-time;
+		letter-spacing: .5px;
+
+		&:hover,
+		&:focus,
+		&:active {
+			border-bottom: 1px solid $primary-color-light;
+			color: $primary-color-light;
+			transition: $transition-time;
+			text-decoration: none;
+		}
+	}
+}

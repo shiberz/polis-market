@@ -31,9 +31,12 @@
 		justify-content: flex-start;
 
 		&:hover,
+		&:focus,
+		&:active,
 		&--active {
 			background-color: $menu-hover;
 			color: $primary-color;
+			text-decoration: none;
 			transition: all .4s;
 		}
 	}
