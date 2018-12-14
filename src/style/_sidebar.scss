@@ -4,8 +4,8 @@
 	transition: all .5s;
 	overflow-x: hidden;
 	min-height: 100vh;
-	font-size: 16pt;
-	line-height: 16pt;
+	font-size: 13pt;
+	line-height: 13pt;
 }
 
 .logo {
@@ -47,7 +47,7 @@
 .login {
 	display: flex;
 	justify-content: flex-start;
-	margin-top: 105px;
+	margin-top: 95px;
 
 	&__block {
 		display: block;
@@ -97,12 +97,14 @@
 		max-width: 180px;
 		overflow: hidden;
 		text-overflow: ellipsis;
+		font-size: 13pt;
+		margin-top: 8px;
 	}
 
 	&__link {
 		color: $font-color;
 		padding-top:4px;
-		font-size: 14pt;
+		font-size: 10pt;
 
 		&:hover * {
 			color: $font-color;
