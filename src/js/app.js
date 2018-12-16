@@ -23,4 +23,19 @@ $(function(){
  		$icon.toggleClass('icon__up-arr', !isOpen);
  		$icon.toggleClass('icon__down-arr', isOpen);
  	});
+
+
+ 	$('.js-switch').on('change', function() {
+ 		var $checkbox = $(this);
+ 		var isChecked = $(this).prop('checked');
+ 		var $control = $checkbox.closest('.js-control');
+ 		$control.toggleClass(
+			'switch-input__control--positive', 
+			isChecked
+		).toggleClass(
+			'switch-input__control--negative', 
+			!isChecked
+		);
+
+ 	})
 });
