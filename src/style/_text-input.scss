@@ -25,6 +25,7 @@
 		color: $font-color-header;
 		background: $secondary-color;
 		transition: all $transition-time;
+		z-index: 1;
 	}
 
 	&__input {
@@ -33,9 +34,11 @@
 		padding: 0 20px;
 		flex: 1 0;
 		border: 0;
-		background: $secondary-color;
+		background: transparent;
 		font-size: 16pt;
 		color: $font-color;
+		position: relative;
+		z-index: 10;
 
 		&:focus,
 		&:active {
