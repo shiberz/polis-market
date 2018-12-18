@@ -37,5 +37,13 @@ $(function(){
 			!isChecked
 		);
 
- 	})
+ 	});
+
+ 	$('.js-select-input').on('focus blur', function(e) {
+
+ 		$select = $(e.target).closest('.js-select');
+ 		var isOpen = $select.hasClass('select-input--is-open');
+ 		// debugger;
+ 		$select.toggleClass('select-input--is-open', !isOpen);
+ 	});
 });

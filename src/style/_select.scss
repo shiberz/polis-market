@@ -1,0 +1,106 @@
+$padding: 0 20px;
+$options-height: 200px;
+
+.select-input {
+	position: relative;
+	height: $control-height;
+	min-height: $control-height;
+
+	&__border {
+		border: 2px solid $secondary-color;
+		border-radius: $border-radius;
+		background: #fff;
+		max-height: 100%;
+		overflow: hidden;
+		transition: all $transition-time;
+	}
+	
+	&__visible {
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	&__label {
+		height: 50%;
+		width: 100%;
+		padding: $padding;
+		display: flex;
+		align-items: center;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		font-size: $font-size-label-active;
+		color: $font-color-header;
+		transition: all $transition-time;
+		z-index: 1;
+	}
+
+	&__input {
+		height: 50%;
+		width: 100%;
+		padding: $padding;
+		flex: 1 0;
+		border: 0;
+		background: transparent;
+		font-size: $font-size-label;
+		color: $font-color-secondary;
+		position: relative;
+		z-index: 10;
+	}
+
+
+	&__options {
+		width: 100%;
+		max-height: $options-height;
+		overflow-y: auto;
+		margin-top: $control-height;
+	}
+
+	&__option {
+		padding: 5px 20px 3px;
+		cursor: pointer;
+		font-size: $font-size-label;
+		transition: all $transition-time;
+
+		&::last-child {
+			padding-bottom: 5px;
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			background: $secondary-color;
+			transition: all $transition-time;
+		}
+	}
+
+	&--is-open {
+		.select-input__border {
+			max-height: $options-height + $control-height;
+			transition: all $transition-time;
+		}
+	}
+
+	&--has-value {
+		background: transparent;
+
+		.select-input {
+			&__input,
+			&__label {
+				background: transparent;
+			}
+
+			&__label {
+				font-size: $font-size-label;
+				height: 50%;
+				bottom: 50%;
+			}
+		}
+	}
+
+	&--has-error {
+		border: 2px solid $accent-color;
+	}
+}
