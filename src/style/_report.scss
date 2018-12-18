@@ -33,9 +33,9 @@
 	}
 
 	&__header {
-		font-size: 14pt;
+		font-size: $font-size-label;
 		line-height: 1em;
-		font-weight: normal;
+		font-weight: bold;
 		color: $font-color;
 		margin-bottom: 22px;
 	}
@@ -51,7 +51,7 @@
 	&__positive,
 	&__negative,
 	&__previous {
-		font-size: 13pt;
+		font-size: $font-size-label;
 		line-height: 1em;
 		margin-bottom: 2px;
 	}

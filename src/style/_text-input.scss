@@ -21,7 +21,7 @@
 		white-space: nowrap;
 		text-overflow: ellipsis;
 		overflow: hidden;
-		font-size: 16pt;
+		font-size: $font-size-label;
 		color: $font-color-header;
 		background: $secondary-color;
 		transition: all $transition-time;
@@ -35,7 +35,7 @@
 		flex: 1 0;
 		border: 0;
 		background: transparent;
-		font-size: 16pt;
+		font-size: $font-size-label;
 		color: $font-color;
 		position: relative;
 		z-index: 10;
@@ -47,7 +47,7 @@
 			&+.text-input__label,
 			&+.text-input__label {
 				background: transparent;
-				font-size: 14pt;
+				font-size: $font-size-label-active;
 				height: 50%;
 				bottom: 50%;
 				transition: all $transition-time;
@@ -65,7 +65,7 @@
 			}
 
 			&__label {
-				font-size: 14pt;
+				font-size: $font-size-label-active;
 				height: 50%;
 				bottom: 50%;
 			}
